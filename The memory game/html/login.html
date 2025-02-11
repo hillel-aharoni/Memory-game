@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>התחברות - משחק הזיכרון</title>
+    <link rel="stylesheet" href="../css/register.css">
+</head>
+<body>
+    <div class="container">
+        <form id="login-form" class="form">
+            <h2>התחברות למשחק הזיכרון של הלל</h2>
+            <div class="form-group">
+                <label for="username">שם משתמש:</label>
+                <input type="text" id="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">סיסמה:</label>
+                <input type="password" id="password" required>
+            </div>
+            <div class="form-group">
+                <label for="difficulty">רמת קושי:</label>
+                <select id="difficulty" name="difficulty" required>
+                    <option value="easy">קל (4x4)</option>
+                    <option value="medium">בינוני (6x6)</option>
+                    <option value="hard">קשה (8x8)</option>
+                </select>
+            </div>
+            <button type="submit">התחבר</button>
+            <p>עדיין אין לך חשבון? <a href="register.html">הירשם כאן</a></p>
+        </form>
+    </div>
+    <script src="../js/login.js"></script>
+</body>
+</html>

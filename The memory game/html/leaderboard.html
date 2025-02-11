@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>לוח תוצאות - משחק הזיכרון</title>
+    <link rel="stylesheet" href="../css/leaderboard.css">
+    <script defer src="../js/leaderboard.js"></script>
+</head>
+<body>
+    <header>
+        <h1>משחק הזיכרון של הלל</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">משחק</a></li>
+                <li><a href="instructions.html">הוראות</a></li>
+                <li><a href="about.html">אודות</a></li>
+                <li><a href="leaderboard.html">לוח תוצאות</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="leaderboard">
+            <h2>🏆 לוח תוצאות</h2>
+            
+            <div class="difficulty-selector">
+                <button class="active button" data-difficulty="easy">קל</button>
+                <button class="button" data-difficulty="medium">בינוני</button>
+                <button class="button"  data-difficulty="hard">קשה</button>
+            </div>
+
+            <table class="scores-table">
+                <thead>
+                    <tr>
+                        <th>דירוג</th>
+                        <th>שם שחקן</th>
+                        <th>זמן</th>
+                        <th>מהלכים</th>
+                        <th>תאריך</th>
+                    </tr>
+                </thead>
+                <tbody id="scores-body">
+                    <!-- הטבלה תמולא דרך JavaScript -->
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer>
+        <p>2025 משחק הזיכרון - כל הזכויות שמורות</p>
+    </footer>
+
+    
+</body>
+</html>
