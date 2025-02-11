@@ -63,6 +63,22 @@ nav ul li a:hover {
     background-color: rgba(255, 255, 255, 0.2);
 }
 
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+    border-radius: 3px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
 .login-section {
     max-width: 400px;
     margin: 50px auto;
@@ -257,6 +273,45 @@ footer {
     .btn {
         padding: 6px 12px;
         font-size: 0.9rem;
+    }
+
+    .hamburger-menu {
+        display: block;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 1000;
+    }
+
+    .nav-links {
+        display: block;
+        width: 250px;
+        height: 100vh;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(76, 175, 80, 0.95);
+        position: fixed;
+        top: 0;
+        right: -250px;
+        padding: 80px 0;
+        gap: 15px;
+        transition: right 0.3s ease-in-out;
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links.active {
+        right: 0;
+    }
+
+    nav ul li {
+        margin: 15px 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li a {
+        padding: 10px 20px;
+        display: block;
     }
 }
 

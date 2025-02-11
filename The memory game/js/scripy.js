@@ -176,4 +176,14 @@ document.addEventListener("DOMContentLoaded", () => {
     };
     
     document.getElementById("hint-button")?.addEventListener("click", useHint);
+
+    // Hamburger Menu Functionality
+    const hamburgerMenu = document.querySelector('.hamburger-menu');
+    const navLinks = document.querySelector('.nav-links');
+
+    if (hamburgerMenu) {
+        hamburgerMenu.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    }
 });
